@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace CSharpEgitimKampi301.PresentationLayer
 {
-    public partial class Form1 : Form
+    public partial class FrmCategory : Form
     {
-        public Form1()
+        public FrmCategory()
         {
             InitializeComponent();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

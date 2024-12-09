@@ -41,12 +41,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\ICategoryService.cs" />
+    <Compile Include="Abstract\ICustomerService.cs" />
+    <Compile Include="Abstract\IGenericService.cs" />
+    <Compile Include="Abstract\IOrderService.cs" />
+    <Compile Include="Abstract\IProductService.cs" />
+    <Compile Include="Concrete\CategoryManager.cs" />
+    <Compile Include="Concrete\CustomerManager.cs" />
+    <Compile Include="Concrete\OrderManager.cs" />
+    <Compile Include="Concrete\ProductManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CSharpEgitimKampi301.DataAccessLayer\CSharpEgitimKampi301.DataAccessLayer.csproj">
       <Project>{0db0c04e-1928-4701-893b-349445077dfe}</Project>
       <Name>CSharpEgitimKampi301.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpEgitimKampi301.EntityLayer\CSharpEgitimKampi301.EntityLayer.csproj">
+      <Project>{AC47FD71-20D7-47CE-80AA-19782FC4659C}</Project>
+      <Name>CSharpEgitimKampi301.EntityLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
